@@ -56,6 +56,10 @@ img {
 	opacity: 1;
  }*/
 
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 3px;
+}
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
