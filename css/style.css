@@ -282,6 +282,13 @@ img {
   top: -24px;
   right: -20px;
 }
+/* SITE-FOOTER  */
+
+.site-footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: var(--dark);
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
