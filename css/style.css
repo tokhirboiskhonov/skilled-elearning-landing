@@ -552,6 +552,7 @@ img {
   body {
     font-size: 18px;
     line-height: 28px;
+    background-position: left calc(50% + 577px) top -80px, left top;
   }
 
   .logo__img {
@@ -586,6 +587,54 @@ img {
 
   .hero__description {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1143px) {
+  body {
+    background-position: left calc(50% + 578px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1146px) {
+  body {
+    background-position: left calc(50% + 578px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  body {
+    background-position: left calc(50% + 581px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1155px) {
+  body {
+    background-position: left calc(50% + 583px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  body {
+    background-position: left calc(50% + 583px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  body {
+    background-position: left calc(50% + 595px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  body {
+    background-position: left calc(50% + 600px) top -79px, left top;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-position: left calc(50% + 600px) top -79px, left top;
   }
 }
 
