@@ -167,6 +167,29 @@ img {
   opacity: 0.6;
 }
 
+/* STATS-CARD */
+
+.stats-card {
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+}
+
+.stats-card__title {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.stats-card__value {
+  margin: 0;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--dark);
+}
+
 /* MAIN-CONTENT */
 
 .main-content {
@@ -201,6 +224,12 @@ img {
   padding-bottom: 45px;
 }
 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero__info {
   display: flex;
   flex-direction: column;
@@ -222,6 +251,43 @@ img {
   margin-bottom: 24px;
 }
 
+.hero__img-stats {
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__picture {
+  display: block;
+}
+
+.hero__img {
+  display: block;
+  border-radius: 50%;
+}
+
+.hero__stats-list {
+  margin: 0;
+}
+
+.hero__course-hour-stats-card {
+  position: absolute;
+  z-index: 1;
+  right: 100px;
+  bottom: -24px;
+  min-width: 155px;
+}
+
+.hero__members-stats-card {
+  position: absolute;
+  z-index: 1;
+  top: -24px;
+  right: -20px;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -234,6 +300,14 @@ img {
   .hero__heading {
     margin-bottom: 26px;
     font-size: 40px;
+  }
+
+  .hero__course-hour-stats-card {
+    right: 135px;
+  }
+
+  .hero__members-stats-card {
+    right: -37px;
   }
 }
 
@@ -254,7 +328,7 @@ img {
   }
 
   .hero__container {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -262,8 +336,64 @@ img {
   .hero__info {
     width: 100%;
     max-width: 400px;
-    margin-right: 32px;
+    /* margin-right: 32px; */
     margin-bottom: 0;
+  }
+
+  .hero__heading,
+  .hero__description {
+    margin-bottom: 25px;
+  }
+
+  .hero__img-stats {
+    margin-right: 41px;
+  }
+
+  .hero__img {
+    width: 216px;
+    height: 383px;
+    border-radius: 159px;
+  }
+
+  .hero__course-hour-stats-card {
+    bottom: -37px;
+    left: -45px;
+    right: auto;
+  }
+
+  .hero__members-stats-card {
+    top: -13px;
+    right: -51px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .stats-card {
+    padding: 20px 24px;
+  }
+
+  .stats-card__title {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .stats-card__value {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .hero__img {
+    width: 317px;
+    height: 560px;
+  }
+
+  .hero__course-hour-stats-card {
+    bottom: 30px;
+  }
+
+  .hero__members-stats-card {
+    top: 0;
+    right: -10px;
   }
 }
 
@@ -305,5 +435,19 @@ img {
 
   .hero__description {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .hero__course-hour-stats-card {
+    min-width: 200px;
+    bottom: 98px;
+    left: -120px;
+  }
+
+  .hero__members-stats-card {
+    min-width: 155px;
+    top: 103px;
+    right: -118px;
   }
 }
