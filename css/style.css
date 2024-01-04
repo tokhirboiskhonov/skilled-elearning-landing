@@ -213,12 +213,7 @@ img {
   display: block;
 }
 
-.site-footer {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  background-color: var(--dark);
-}
-
+/* HERO */
 .hero {
   padding-top: 22px;
   padding-bottom: 45px;
